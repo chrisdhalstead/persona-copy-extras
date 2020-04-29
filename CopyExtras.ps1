@@ -23,7 +23,7 @@ Add-Content $sLogFile -Value $sLogTitle
 #UPDATE THIS PATH BEFORE SCRIPT EXECUTION
 #Get Persona Manager share path
 #Assumes all .v6 profiles
-$PMpath = "\\fs1.betavmweuc.com\PersonaMgmt\" + $un + ".v6"
+$PMpath = "\\fqdnoffileserver\share\" + $un + ".v6"
 ##########################################################################################
 
 Function Write-Log {
