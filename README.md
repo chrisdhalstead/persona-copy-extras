@@ -23,7 +23,7 @@ $PMpath = "**\\\fqdnoffileserver\share**\" + $un + ".v6"
 
 
 
-![](Images\DEM-Logon-Task.png)
+![](Images/DEM-Logon-Task.png)
 
 
 
