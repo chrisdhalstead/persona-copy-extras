@@ -29,7 +29,7 @@ We can copy these standard folders locally using a group policy setting, but any
 
 
 
-<img src="Images\log-copy.png" width="1500" />
+<img src="Images\Log-Copy.png" width="1500" />
 
 
 
