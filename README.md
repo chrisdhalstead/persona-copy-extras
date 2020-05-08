@@ -33,6 +33,8 @@ We can copy these standard folders locally using a group policy setting, but any
 
 
 
+<img src="Images\Log-Same.png" width="1500" />
+
 ### Change Log
 
 
