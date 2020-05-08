@@ -2,8 +2,6 @@
 # Script to copy extra data from Persona Management to FSLogix Profile Container
 # Josh Spencer / Chris Halstead - VMware
 # There is NO support for this script - it is provided as is
-# Usage....
-#
 # Version 1.0 - April 22, 2020
 ##########################################################################################
 
