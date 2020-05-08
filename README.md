@@ -1,6 +1,6 @@
 # persona-copy-extras
 
-Josh Spencer / Chris Halstead - VMware
+Josh Spencer / Chris Halstead - VMware <crlf>
 This script is provided as-is and there is no support
 
 Version 1.0 - May 8 2020
