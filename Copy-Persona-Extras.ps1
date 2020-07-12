@@ -145,8 +145,19 @@ if (Test-Path $PMpath"\ce-flag.txt")
 }
 else {
 
-  #Copy data
-  Compare-and-Sync
+  if(test-path $PMpath)
+    {
+        Write-Log -Message "Found the Persona Folder - Starting Copy"
+        #Copy data
+        Compare-and-Sync
+
+    }
+  else 
+    {
+      Write-Log -Message "Persona Folder Not Found - Exiting"
+      Write-Log -Message "Finishing Script***********************************************"
+
+    }
   
 }
 
