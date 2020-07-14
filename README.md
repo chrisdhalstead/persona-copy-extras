@@ -1,9 +1,9 @@
 # persona-copy-extras
 
-Josh Spencer / Chris Halstead - VMware <br />
+Chris Halstead / Josh Spencer - VMware <br />
 This script is provided as-is and there is no support
 
-Version 1.0 - May 8 2020
+Version 2.0 - July 14 2020
 
 ------
 
@@ -19,9 +19,7 @@ We can copy these standard folders locally using a group policy setting, but any
 
 1. Move the `copyextras.ps1` file to the location you want to run the script from.   A log file will be created at this location for each user showing what is happening at each logon
 
-`$PMpath = "\\\fqdnoffileserver\share\" + $un + ".v6"`
-
-
+`$PMpath = "\\fqdnoffileserver\share\" + $un + ".v6"`
 
 <img src="Images/DEM-Logon-Task.png" width="500" />
 
