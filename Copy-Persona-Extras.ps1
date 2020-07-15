@@ -92,6 +92,7 @@ if (!(Test-Path $CopyPath)){ New-Item -ItemType Directory -Path $copypath}
 Get-ChildItem -Path $script:PMpath -File | % {Copy-Item $_.fullname "$copypath" -Recurse -Force } 
 write-log -message "Copying Files from Persona Root"
 
+#Process Extra Folders
 ForEach ($extrafiles in $extraremotefolders)
 
 {
@@ -99,7 +100,7 @@ ForEach ($extrafiles in $extraremotefolders)
   if (!(Test-Path "$copypath\$extrafiles")) {New-Item -ItemType Directory -Path "$copypath\$extrafiles" -Force}
   $sdestpath = "$copypath\$extrafiles"
   Get-ChildItem -Path $script:PMpath"\"$extrafiles | % {Copy-Item $_.fullname "$sdestpath" -Recurse -Force } 
-  write-log -message "Copying Extra Folders / Files"
+  write-log -message "Copying Extra Folders / Files to: $sdestpath"
 
 }
 
