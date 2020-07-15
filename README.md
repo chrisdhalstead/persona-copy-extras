@@ -19,9 +19,9 @@ We can copy these standard folders locally using a group policy setting, but any
 
 1. Move the `copy-persona-extras.ps1` file to the location you want to run the script from.   A log file will be created for each user showing what is happening at each logon.  Make sure the users have the ability to execute PowerShell scripts - [read more here](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7)
 
-2. Edit the script to point to the location of the Persona Management share
+2. Edit the script to point to the location of the Persona Management share<br/>
 
-   ![configurepm](https://github.com/chrisdhalstead/persona-copy-extras/blob/master/Images/configurepm.png)
+   ![configurepm](https://github.com/chrisdhalstead/persona-copy-extras/blob/master/Images/configurepm.png)<br />
    
    Example:  `$PMpath = **"\\\fqdnoffileserver\share\"** + $un + ".v6"``
    
