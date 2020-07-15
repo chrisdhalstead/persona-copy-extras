@@ -25,33 +25,31 @@ We can copy these standard folders locally using a group policy setting, but any
    
    Example:  `$PMpath = **"\\\fqdnoffileserver\share\"** + $un + ".v6"``
    
-3. Use Dynamic Environment Manager to execute the script
+3. Use Dynamic Environment Manager to execute the script<br/>
 
-   ![dem](https://github.com/chrisdhalstead/persona-copy-extras/blob/master/Images/dem.png)
+   ![dem](https://github.com/chrisdhalstead/persona-copy-extras/blob/master/Images/dem.png)<br/>
 
    Example:  Command: `powershell.exe \\fs1\horizonscripts\copy-persona-extras.ps1`
    Example:  Check `Run asynchronously`- this will make sure the script runs in the background and does not impact the logon process
 
    Note:  if the script has already run for the user it will not copy any data if the `ce-flag.txt` file exists on the root of the users Persona Management profile.  Simply delete that flag file to allow the script to copy data again.
 
-4. The script will evaluate the persona profile and copy any folders / files that are not in 
-
-5. When scripts runs, a folder will be created in the users My Documents folder called `"ExtrasFromPersona"`
+4. When scripts runs, a folder will be created in the users My Documents folder called `"ExtrasFromPersona"`<br />
    ![ExtrasFolder](https://github.com/chrisdhalstead/persona-copy-extras/blob/master/Images/ExtrasFolder.PNG)
 
-6. When the script executes - all folders and files not in the standard folders managed by Persona Management will be copied to the newly created folder
+5. When the script executes - all folders and files not in the standard folders managed by Persona Management will be copied to the newly created folder<br />
    ![stdfolders](https://github.com/chrisdhalstead/persona-copy-extras/blob/master/Images/stdfolders.png)
 
-7. When the script is done  - all of the extra files will be located in the new folder
+6. When the script is done  - all of the extra files will be located in the new folder<br />
    ![extrasfolderdata](https://github.com/chrisdhalstead/persona-copy-extras/blob/master/Images/extrasfolderdata.PNG)
 
-8. The script will then set a flag file `ce-flag.txt` - the script will see this flag file and skip subsequent copy actions
+7. The script will then set a flag file `ce-flag.txt` - the script will see this flag file and skip subsequent copy actions<br />
    ![flag](https://github.com/chrisdhalstead/persona-copy-extras/blob/master/Images/flag.PNG)
 
-9. A log file will be created in /logs under the location where the script is executed - one log file will be created for each user and the latest data will be at the bottom of the log file
-   ![logs](https://github.com/chrisdhalstead/persona-copy-extras/blob/master/Images/logs.PNG)
-   ![Log-Copy](https://github.com/chrisdhalstead/persona-copy-extras/blob/master/Images/Log-Copy.png)
+8. A log file will be created in /logs under the location where the script is executed - one log file will be created for each user and the latest data will be at the bottom of the log file<br />
+   ![logs](https://github.com/chrisdhalstead/persona-copy-extras/blob/master/Images/logs.PNG)<br />
+   ![Log-Copy](https://github.com/chrisdhalstead/persona-copy-extras/blob/master/Images/Log-Copy.png)<br />
 
-   ![Log-Same](https://github.com/chrisdhalstead/persona-copy-extras/blob/master/Images/Log-Same.png)
+   ![Log-Same](https://github.com/chrisdhalstead/persona-copy-extras/blob/master/Images/Log-Same.png)<br />
 
    
